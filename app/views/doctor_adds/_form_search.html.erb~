@@ -1,0 +1,40 @@
+<%= form_for(@doctor_add, url: 'result_path') do |f| %>
+  <% if @doctor_add.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@doctor_add.errors.count, "error") %> prohibited this user from being saved:</h2>
+
+      <ul>
+      <% @doctor_add.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+<div class="field">
+    <%= f.label :speciality %><br>
+    <%= f.text_field :speciality %>
+  </div>
+<div class="field">
+    <%= f.label :docFamily %><br>
+    <%= f.text_field :docFamily %>
+  </div>
+<div class="field">
+    <%= f.label :docName %><br>
+    <%= f.text_field :docName %>
+  </div>
+
+<div class="field">
+    <%= f.label :from %><br>
+    <%= f.datetime_select :from %>
+  </div>
+<div class="field">
+    <%= f.label :to %><br>
+    <%= f.datetime_select:to %>
+  </div>
+
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

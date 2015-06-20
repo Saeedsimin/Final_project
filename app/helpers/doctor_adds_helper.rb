@@ -1,0 +1,2 @@
+module DoctorAddsHelper
+end

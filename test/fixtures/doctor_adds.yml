@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  from: 2015-06-19 16:26:24
+  to: 2015-06-19 16:26:24
+  total: 1
+  used: 1
+  docName: MyString
+  docFamily: MyString
+  speciality: MyString
+
+two:
+  from: 2015-06-19 16:26:24
+  to: 2015-06-19 16:26:24
+  total: 1
+  used: 1
+  docName: MyString
+  docFamily: MyString
+  speciality: MyString

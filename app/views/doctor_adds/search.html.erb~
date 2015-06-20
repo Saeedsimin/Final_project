@@ -1,0 +1,5 @@
+<h1>seach Doctor /h1>
+
+<%= render 'search_form' %>
+
+<%= link_to 'Back', doctor_adds_path %>

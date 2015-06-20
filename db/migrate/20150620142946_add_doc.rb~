@@ -1,0 +1,4 @@
+class AddDoc < ActiveRecord::Migration
+  def change
+  end
+end

@@ -1,0 +1,39 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>From:</strong>
+  <%= @doctor_add.from %>
+</p>
+
+<p>
+  <strong>To:</strong>
+  <%= @doctor_add.to %>
+</p>
+
+<p>
+  <strong>Total:</strong>
+  <%= @doctor_add.total %>
+</p>
+
+<p>
+  <strong>Used:</strong>
+  <%= @doctor_add.used %>
+</p>
+
+<p>
+  <strong>Docname:</strong>
+  <%= @doctor_add.docName %>
+</p>
+
+<p>
+  <strong>Docfamily:</strong>
+  <%= @doctor_add.docFamily %>
+</p>
+
+<p>
+  <strong>Speciality:</strong>
+  <%= @doctor_add.speciality %>
+</p>
+
+<%= link_to 'Edit', edit_doctor_add_path(@doctor_add) %> |
+<%= link_to 'Back', doctor_adds_path %>

@@ -1,0 +1,45 @@
+<div id="wrap">
+      <header>
+         <div id="logo">
+	  <%= link_to image_tag("Icon.png", alt: "logo"),
+            root_path,  {class: "logo_icon"} %>
+         </div>
+	 <div id="blank">
+            Roham Online Clinic
+         </div>
+         <nav>
+          <ul class="nav navbar-nav navbar-right">
+             
+             <% if logged_in? %>
+			
+                 <li><%= link_to "Edit",  edit_user_path(current_user), {class: "link"}  %></li>
+                 
+         	 <li><%= link_to "Profile", current_user, {class: "link"} %></li>
+
+       		 <li><%= link_to "Search Visitation", '#', {class: "link"} %></li>
+			     
+                 <li><%= link_to "Visitation History", '#', {class: "link"} %></li>
+
+                 <li><%= link_to "Log out", logout_path, method: "delete" , class: "link" %></li>
+                 
+                 
+            <% else %>
+
+		<form action="home" id="btn_home_form">
+		    	<input type="submit" value="home" class="btn_nav">
+		</form>
+		
+      		<form action="login" id="btn_login_form">
+		    	        
+			<input type="submit" value="login" class="btn_nav">
+		</form>
+		
+		
+		
+              
+            <% end %>
+
+          </ul>
+        </nav>
+     </header>
+</div>

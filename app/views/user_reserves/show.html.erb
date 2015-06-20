@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Date:</strong>
+  <%= @user_reserf.date %>
+</p>
+
+<p>
+  <strong>Doctor:</strong>
+  <%= @user_reserf.doctor_id %>
+</p>
+
+<p>
+  <strong>Reserve:</strong>
+  <%= @user_reserf.reserve_id %>
+</p>
+
+<p>
+  <strong>User:</strong>
+  <%= @user_reserf.user_id %>
+</p>
+
+<p>
+  <strong>Turn:</strong>
+  <%= @user_reserf.turn %>
+</p>
+
+<%= link_to 'Edit', edit_user_reserf_path(@user_reserf) %> |
+<%= link_to 'Back', user_reserves_path %>

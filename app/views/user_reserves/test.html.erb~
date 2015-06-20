@@ -1,0 +1,3 @@
+this for test
+<%= debug @temp%>
+<%= debug @temp[0].family%>
